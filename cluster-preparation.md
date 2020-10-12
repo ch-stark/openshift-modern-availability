@@ -7,6 +7,13 @@ This step has the followign reprequisites:
 2. proper aws credentials and quotas to deploy on the NA AWS regions.
 3. a ssh key and a OCP pull secret.
 
+
+## Install Helper  Tool
+
+```
+https://medium.com/@gchandra/install-jq-on-centos-7-459dd650baa3
+```
+
 ## Deploy RHACM
 
 ```shell
