@@ -41,19 +41,19 @@ export cluster_release_image=quay.io/openshift-release-dev/ocp-release:$(oc get 
 create clusters
 
 ```shell
-export region="us-east-1"
+export region="eu-west-1"
 export network_cidr="10.128.0.0/14"
 export service_cidr="172.30.0.0/16"
 envsubst < ./acm/acm-cluster-values.yaml > /tmp/values.yaml
 helm upgrade cluster1 ./charts/acm-aws-cluster --create-namespace -i -n cluster1  -f /tmp/values.yaml
 
-export region="us-east-2"
+export region="eu-west-2"
 export network_cidr="10.132.0.0/14"
 export service_cidr="172.31.0.0/16"
 envsubst < ./acm/acm-cluster-values.yaml > /tmp/values.yaml
 helm upgrade cluster2 ./charts/acm-aws-cluster --create-namespace -i -n cluster2  -f /tmp/values.yaml
 
-export region="us-west-2"
+export region="eu-west-3"
 export network_cidr="10.136.0.0/14"
 export service_cidr="172.32.0.0/16"
 envsubst < ./acm/acm-cluster-values.yaml > /tmp/values.yaml
