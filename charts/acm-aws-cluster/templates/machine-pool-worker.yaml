@@ -13,4 +13,6 @@ spec:
         size: 100
         type: gp2
       type: m5.large
+      spotMarketOptions:
+        maxPrice: '0.4'  
   replicas: 3 
